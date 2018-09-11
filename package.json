@@ -19,9 +19,10 @@
   },
   "scripts": {
     "coverage": "nyc yarn test",
+    "coverage:check": "nyc check-coverage --lines 100 --functions 100 --branches 100 --statements 100 --per-file",
     "fix": "eslint --fix .",
     "lint": "eslint .",
-    "precommit": "yarn run lint && yarn run test",
+    "precommit": "yarn run lint && yarn run test && yarn run coverage:check",
     "test": "mocha --require @babel/register index.unit.test.js"
   }
 }
