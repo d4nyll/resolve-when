@@ -3,5 +3,25 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Daniel Li <dan@danyll.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "husky": "^0.14.3",
+    "lolex": "^2.7.4",
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1"
+  },
+  "scripts": {
+    "coverage": "nyc yarn test",
+    "fix": "eslint --fix .",
+    "lint": "eslint .",
+    "precommit": "yarn run lint && yarn run test",
+    "test": "mocha --require @babel/register index.unit.test.js"
+  }
 }

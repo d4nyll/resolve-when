@@ -1,0 +1,27 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "consistent-return": "off",
+    "semi": [
+      "error",
+      "always",
+      {
+        "omitLastInOneLineBlock": true
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.test.js"
+      ],
+      "env": {
+        "mocha": true
+      },
+      "rules": {
+        "func-names": "off",
+        "prefer-arrow-callback": "off"
+      }
+    }
+  ]
+}
