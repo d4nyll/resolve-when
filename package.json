@@ -1,0 +1,7 @@
+{
+  "name": "promise-until",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Daniel Li <dan@danyll.com>",
+  "license": "MIT"
+}
