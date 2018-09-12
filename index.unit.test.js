@@ -1,19 +1,19 @@
 import assert from 'assert';
 import { install } from 'lolex';
-import promiseUntil from '.';
+import resolveWhen from '.';
 
-describe('promiseUntil', function () {
+describe('resolveWhen', function () {
   let clock;
   before(function () { clock = install() });
   after(function () { clock.uninstall() });
 
   describe('.defaults.interval', function () {
     it('should set to 50 (ms)', function () {
-      assert.equal(promiseUntil.defaults.interval, 50);
+      assert.equal(resolveWhen.defaults.interval, 50);
     });
     it('should be immutable', function () {
       try {
-        promiseUntil.defaults.interval = 100;
+        resolveWhen.defaults.interval = 100;
       } catch (e) {
         assert(e.message.includes("Cannot assign to read only property 'interval' of object"));
       }
@@ -23,7 +23,7 @@ describe('promiseUntil', function () {
   describe('when called with no arguments', function () {
     let promise;
     beforeEach(function () {
-      promise = promiseUntil();
+      promise = resolveWhen();
     });
     it('should resolve', function () {
       return promise;
@@ -34,7 +34,7 @@ describe('promiseUntil', function () {
     let condition = false;
     let promise;
     beforeEach(function () {
-      promise = promiseUntil(() => condition);
+      promise = resolveWhen(() => condition);
       setTimeout(() => { condition = true }, 10000);
     });
     it('should resolve once condition is met', function () {
@@ -50,7 +50,7 @@ describe('promiseUntil', function () {
       let promise;
       beforeEach(function () {
         promise = Promise.race([
-          promiseUntil(() => false),
+          resolveWhen(() => false),
           new Promise(resolve => setTimeout(resolve, forever, resolvedIndicator)),
         ]);
       });
@@ -69,10 +69,10 @@ describe('promiseUntil', function () {
       const max = 30;
       let promise;
       beforeEach(function () {
-        promise = promiseUntil(() => false, { max });
+        promise = resolveWhen(() => false, { max });
       });
       it('should not reject before max * interval', function () {
-        const timeLimit = promiseUntil.defaults.interval * (max - 1);
+        const timeLimit = resolveWhen.defaults.interval * (max - 1);
         const testPromise = Promise.race([
           promise,
           new Promise(resolve => setTimeout(resolve, timeLimit, resolvedIndicator)),
@@ -89,7 +89,7 @@ describe('promiseUntil', function () {
           });
       });
       it('should reject after max * interval', function () {
-        clock.tick(promiseUntil.defaults.interval * max);
+        clock.tick(resolveWhen.defaults.interval * max);
         return promise
           .then(() => { throw Error('Promise should not have resolved') })
           .catch((error) => {

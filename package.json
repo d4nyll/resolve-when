@@ -1,5 +1,5 @@
 {
-  "name": "promise-until",
+  "name": "resolve-when",
   "version": "1.0.0",
   "description": "Returns a promise that resolves once condition is met",
   "author": {
@@ -7,9 +7,9 @@
     "email": "dan@danyll.com",
     "url": "http://danyll.com/"
   },
-  "repository": "d4nyll/promise-until",
+  "repository": "d4nyll/resolve-when",
   "bugs": {
-    "url": "https://github.com/d4nyll/promise-until/issues"
+    "url": "https://github.com/d4nyll/resolve-when/issues"
   },
   "engines": {
     "node": ">=6"

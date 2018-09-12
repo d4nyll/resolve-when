@@ -1,4 +1,4 @@
-function promiseUntil(condition = () => true, { max, interval = 50 } = {}) {
+function resolveWhen(condition = () => true, { max, interval = 50 } = {}) {
   return new Promise((resolve, reject) => {
     (function poll(iteration = 1) {
       if (condition()) return resolve();
@@ -8,10 +8,10 @@ function promiseUntil(condition = () => true, { max, interval = 50 } = {}) {
   });
 }
 
-Object.defineProperty(promiseUntil, 'defaults', {
+Object.defineProperty(resolveWhen, 'defaults', {
   value: Object.create(Object.prototype, {
     interval: { value: 50 },
   }),
 });
 
-export default promiseUntil;
+export default resolveWhen;
