@@ -14,4 +14,4 @@ Object.defineProperty(resolveWhen, 'defaults', {
   }),
 });
 
-export default resolveWhen;
+module.exports = resolveWhen;
