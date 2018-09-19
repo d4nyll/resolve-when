@@ -1,6 +1,6 @@
 # resolve-when
 
-[![Build Status](https://travis-ci.org/d4nyll/resolve-when.svg?branch=master)](https://travis-ci.org/d4nyll/resolve-when)
+[![Build Status](https://travis-ci.org/d4nyll/resolve-when.svg?branch=master)](https://travis-ci.org/d4nyll/resolve-when) [![Greenkeeper badge](https://badges.greenkeeper.io/d4nyll/resolve-when.svg)](https://greenkeeper.io/)
 
 Returns a promise that resolves once condition is met
 
