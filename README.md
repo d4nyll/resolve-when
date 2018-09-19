@@ -11,6 +11,8 @@ Returns a promise that resolves once condition is met
 
 ## Installation
 
+[![NPM](https://nodei.co/npm/resolve-when.png?compact=true)](https://nodei.co/npm/resolve-when/)
+
 `resolve-when` is published at [npmjs.com](https://www.npmjs.com/), and can be installed using [`npm`](https://docs.npmjs.com/cli/npm) or [`yarn`](https://yarnpkg.com/lang/en/).
 
 ```bash
