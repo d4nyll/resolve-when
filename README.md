@@ -1,6 +1,7 @@
 # resolve-when
 
 [![Build Status](https://travis-ci.org/d4nyll/resolve-when.svg?branch=master)](https://travis-ci.org/d4nyll/resolve-when)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fd4nyll%2Fresolve-when.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fd4nyll%2Fresolve-when?ref=badge_shield)
 
 Returns a promise that resolves once condition is met
 
@@ -62,3 +63,7 @@ We have used [`husky`](https://github.com/typicode/husky) to help you ensure:
 * Coverage is at 100%
 
 Any PRs which does not pass the linter, tests or coverage tools will be rejected.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fd4nyll%2Fresolve-when.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fd4nyll%2Fresolve-when?ref=badge_large)
