@@ -1,6 +1,11 @@
 # resolve-when
 
 [![Build Status](https://travis-ci.org/d4nyll/resolve-when.svg?branch=master)](https://travis-ci.org/d4nyll/resolve-when)
+[![Known Vulnerabilities](https://snyk.io/test/github/d4nyll/resolve-when/badge.svg?targetFile=package.json)](https://snyk.io/test/github/d4nyll/resolve-when?targetFile=package.json)
+[![CodeFactor](https://www.codefactor.io/repository/github/d4nyll/resolve-when/badge)](https://www.codefactor.io/repository/github/d4nyll/resolve-when)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/971a7adcbbd447e98e08b988f6efa6f3)](https://www.codacy.com/app/d4nyll/resolve-when?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=d4nyll/resolve-when&amp;utm_campaign=Badge_Grade)
+[![Greenkeeper badge](https://badges.greenkeeper.io/d4nyll/resolve-when.svg)](https://greenkeeper.io/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fd4nyll%2Fresolve-when.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fd4nyll%2Fresolve-when?ref=badge_shield)
 
 Returns a promise that resolves once condition is met
 
@@ -62,3 +67,6 @@ We have used [`husky`](https://github.com/typicode/husky) to help you ensure:
 * Coverage is at 100%
 
 Any PRs which does not pass the linter, tests or coverage tools will be rejected.
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fd4nyll%2Fresolve-when.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fd4nyll%2Fresolve-when?ref=badge_large)

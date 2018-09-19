@@ -1,6 +1,6 @@
 {
   "name": "resolve-when",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Returns a promise that resolves once condition is met",
   "author": {
     "name": "Daniel Li",
