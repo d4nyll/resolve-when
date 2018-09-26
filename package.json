@@ -45,7 +45,7 @@
     "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "husky": "^0.14.3",
+    "husky": "^1.0.0",
     "lolex": "^2.7.4",
     "mocha": "^5.2.0",
     "nyc": "^13.0.1"
