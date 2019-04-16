@@ -48,7 +48,7 @@
     "husky": "^0.14.3",
     "lolex": "^2.7.4",
     "mocha": "^5.2.0",
-    "nyc": "^13.0.1"
+    "nyc": "^14.0.0"
   },
   "scripts": {
     "coverage": "nyc --reporter=lcov yarn test",
